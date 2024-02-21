@@ -36,6 +36,11 @@
     box-shadow: 4px 4px 4px black;
     text-shadow: 2px 2px 2px black;
 }
+
+.assets {
+    display: none;
+}
+
 @media screen and (max-width: 900px){
     #canvas1 {
         background: url('./img/background1080x1920.png');
