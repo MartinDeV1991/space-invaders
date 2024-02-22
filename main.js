@@ -43,7 +43,7 @@ class Game {
 
         this.score = 0;
         this.lives;
-        this.winningScore = 20;
+        this.winningScore = 50;
         this.message1 = 'Run!';
         this.message2 = 'Or get eaten!';
         this.message3 = 'Press "ENTER" or "R" to start!';
@@ -161,12 +161,16 @@ class Game {
     createEnemyPool() {
         for (let i = 0; i < this.numberOfEnemies; i++) {
             const randomNumber = Math.random();
-            if (randomNumber < 0.95) {
+            console.log(randomNumber)
+            if (randomNumber < 0.33) {
                 this.enemyPool.push(new Phantommorph(this));
-            } else if (this.randomNumber < 0.99) {
+                console.log("phantom")
+            } else if (randomNumber < 0.66) {
                 this.enemyPool.push(new Lobstermorph(this));
-            } else if (this.randomNumber <= 1) {
+                console.log("lobster")
+            } else if (randomNumber <= 1) {
                 this.enemyPool.push(new BeetleMorph(this));
+                console.log("beetle")
             }
         }
     }
