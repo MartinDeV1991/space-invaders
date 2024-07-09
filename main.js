@@ -44,7 +44,7 @@ class Game {
         this.score = 0;
         this.lives;
         this.winningScore = 50;
-        this.message1 = 'Run!';
+        this.message1 = 'Destroy the bugs!';
         this.message2 = 'Or get eaten!';
         this.message3 = 'Press "ENTER" or "R" to start!';
         this.gameOver = true;
